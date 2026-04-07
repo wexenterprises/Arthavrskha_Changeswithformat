@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta name="description" content="Institutional wealth management and financial education by Ravindra Rao. SEBI RA: INH000025212. 18+ years of institutional experience."/>
+<title>Arthavrksh | Institutional Wealth Management</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed-dim": "#4ae183",
+                        "secondary-fixed": "#6bfe9c",
+                        "surface-tint": "#5d5c74",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-container": "#83829b",
+                        "on-tertiary-container": "#7d8493",
+                        "surface-bright": "#f8f9fa",
+                        "secondary": "#2ECC71",
+                        "primary": "#1A1A2E",
+                        "on-primary-fixed": "#1a1a2e",
+                        "surface-variant": "#e1e3e4",
+                        "inverse-surface": "#2e3132",
+                        "on-secondary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed": "#00210c",
+                        "on-surface": "#191c1d",
+                        "error": "#ba1a1a",
+                        "primary-container": "#1a1a2e",
+                        "inverse-on-surface": "#f0f1f2",
+                        "on-secondary-fixed-variant": "#005228",
+                        "on-secondary-container": "#00743a",
+                        "surface": "#f8f9fa",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed-dim": "#c6c4df",
+                        "primary-fixed": "#e2e0fc",
+                        "on-background": "#191c1d",
+                        "outline": "#78767d",
+                        "tertiary-fixed": "#dce2f3",
+                        "surface-container": "#edeeef",
+                        "on-primary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed-variant": "#404754",
+                        "tertiary-fixed-dim": "#c0c7d6",
+                        "tertiary-container": "#151c27",
+                        "surface-dim": "#d9dadb",
+                        "surface-container-low": "#f3f4f5",
+                        "background": "#f8f9fa",
+                        "secondary-container": "#6bfe9c",
+                        "on-primary-fixed-variant": "#45455b",
+                        "on-error-container": "#93000a",
+                        "outline-variant": "#c8c5cd",
+                        "on-tertiary-fixed": "#151c27",
+                        "tertiary": "#000002",
+                        "surface-container-high": "#e7e8e9",
+                        "inverse-primary": "#c6c4df",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-surface-variant": "#47464c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0rem",
+                        "lg": "0rem",
+                        "xl": "0rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Inter", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Inter", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #F8F9FA; color: #1A1A2E; }
+        .headline-monolith { letter-spacing: -0.04em; line-height: 1.1; }
+        .body-editorial { line-height: 1.6; opacity: 0.65; }
+        .grayscale-portrait { filter: grayscale(100%) contrast(110%); }
+        .ticker-wrap { overflow: hidden; white-space: nowrap; }
+        .ticker-move { display: inline-block; animation: ticker 40s linear infinite; }
+        @keyframes ticker {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .pulse-dot { animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: .3; }
+        }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-surface">
+<!-- Section 0: Regulatory Bar -->
+<div class="w-full bg-primary py-2 px-4 text-center">
+<p class="text-[10px] font-bold text-white uppercase tracking-widest">
+            INVESTMENT IN SECURITIES MARKET ARE SUBJECT TO MARKET RISKS. READ ALL THE RELATED DOCUMENTS CAREFULLY BEFORE INVESTING. SEBI RA: INH000025212
+        </p>
+</div>
+<!-- Section 1: TopNavBar -->
+<nav class="sticky top-0 w-full z-50 bg-[#F8F9FA] dark:bg-slate-900 flex justify-between items-center px-8 py-4 max-w-full mx-auto border-b border-primary/5">
+<div class="text-xl font-bold text-[#1A1A2E] dark:text-white tracking-tighter">Arthavrksh</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-[11px] font-bold uppercase tracking-[0.1em] text-[#1A1A2E] dark:text-slate-400 hover:text-[#2ECC71] transition-colors duration-200" href="#">Invest With Me</a>
+<a class="text-[11px] font-bold uppercase tracking-[0.1em] text-[#1A1A2E] dark:text-slate-400 hover:text-[#2ECC71] transition-colors duration-200" href="#">Learn From Me</a>
+<a class="text-[11px] font-bold uppercase tracking-[0.1em] text-[#1A1A2E] dark:text-slate-400 hover:text-[#2ECC71] transition-colors duration-200" href="#">About Ravindra</a>
+<button class="bg-secondary text-white px-6 py-2 text-[11px] font-bold uppercase tracking-widest hover:brightness-110 active:scale-95 transition-all">Book Free Call</button>
+</div>
+</nav>
+<!-- Section 2: Hero -->
+<section class="max-w-7xl mx-auto px-8 py-24 flex flex-col md:flex-row items-center gap-16">
+<div class="md:w-7/12">
+<div class="inline-block bg-primary/5 px-3 py-1 mb-6">
+<span class="text-[10px] font-bold uppercase tracking-widest text-primary/60">SEBI-Registered Research Analyst · AMFI-Registered MFD · BSE Faculty</span>
+</div>
+<h1 class="text-5xl md:text-7xl font-bold headline-monolith mb-6 text-primary">
+                Your Money Deserves Someone Who Has Actually Managed It at <span class="text-secondary">Institutional Scale.</span>
+</h1>
+<p class="text-lg md:text-xl body-editorial mb-10 max-w-xl">
+                Ravindra Rao spent 18 years managing institutional capital at Kotak Securities, Anand Rathi, and Motilal Oswal. He now runs two things: a mutual fund distribution practice for investors who want SIPs done right — and an education program for people who want to learn how markets actually work.
+            </p>
+<div class="flex flex-col gap-4 mb-12">
+<button class="bg-secondary text-white py-5 px-10 text-sm font-bold uppercase tracking-widest inline-flex items-center justify-center w-fit group">
+                    Book Your Free Discovery Call 
+                    <span class="material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+<!-- Stats Strip -->
+<div class="grid grid-cols-2 md:grid-cols-5 gap-8 pt-12 border-t border-primary/10">
+<div>
+<div class="text-2xl font-bold text-primary">18+</div>
+<div class="text-[10px] font-bold uppercase tracking-widest opacity-40">Years Institutional Experience</div>
+</div>
+<div>
+<div class="text-2xl font-bold text-primary">2,000+</div>
+<div class="text-[10px] font-bold uppercase tracking-widest opacity-40">Students Trained</div>
+</div>
+<div>
+<div class="text-2xl font-bold text-primary">₹15 Cr+</div>
+<div class="text-[10px] font-bold uppercase tracking-widest opacity-40">MF AUM Managed</div>
+</div>
+<div>
+<div class="text-2xl font-bold text-primary">1.0 / 1.0</div>
+<div class="text-[10px] font-bold uppercase tracking-widest opacity-40">BSE FinX Faculty Score</div>
+</div>
+<div>
+<div class="text-2xl font-bold text-primary">SEBI RA</div>
+<div class="text-[10px] font-bold uppercase tracking-widest opacity-40">INH000025212</div>
+</div>
+</div>
+</div>
+<div class="md:w-5/12">
+<div class="relative">
+<div class="absolute -inset-4 bg-surface-container-low -z-10"></div>
+<img alt="Professional portrait of Ravindra Rao" class="w-full grayscale-portrait aspect-[4/5] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5J8Q42tcuk2ZYmRIpg5zOlUR0Qzxi4AKvD9uUcYv_KlP6by1ON8qRQrGOdzn45sGqGuTjtIUyli23Ep_9qE_MlofsUZ9bRBq_3yRAgOP5Qj8BS6w_4bd1f93_UI-GjzK0qwmYayF0WepjUIIFQbD56i7_mGVIFlZn8ETi4QXdOwlubITRxgnISNzp5vmeb_daBAc1T5zLxZz6BUfOoiyWTxoBSlzvmqDczmZi3e7C4cSxgVJvCHNQCTd2NJw1Ij4n8PgTYb7Mj10" onerror="this.onerror=null;this.style.display='none'"/>
+</div>
+</div>
+</section>
+<!-- Section 3: Credential Ticker -->
+<section class="bg-primary py-6 overflow-hidden border-y border-white/5">
+<div class="ticker-wrap flex">
+<div class="ticker-move flex items-center gap-12 text-white/50 text-[11px] font-bold uppercase tracking-widest">
+<span>Kotak Securities — Head of Commodity Research</span> <span class="w-1.5 h-1.5 bg-secondary rounded-full"></span>
+<span>Anand Rathi — 5 Years, Commodity &amp; Currency Desk</span> <span class="w-1.5 h-1.5 bg-secondary rounded-full"></span>
+<span>Motilal Oswal — Institutional Research</span> <span class="w-1.5 h-1.5 bg-secondary rounded-full"></span>
+<span>AMFI-Registered Mutual Fund Distributor</span> <span class="w-1.5 h-1.5 bg-secondary rounded-full"></span>
+<span>SEBI Research Analyst — INH000025212</span> <span class="w-1.5 h-1.5 bg-secondary rounded-full"></span>
+<span>BSE FinX Faculty — Highest Rating Ever Recorded</span> <span class="w-1.5 h-1.5 bg-secondary rounded-full"></span>
+<span>ET Now · CNBC Awaaz · Zee Business</span> <span class="w-1.5 h-1.5 bg-secondary rounded-full"></span>
+<span>CMT · CFTe · EPATian</span> <span class="w-1.5 h-1.5 bg-secondary rounded-full"></span>
+<!-- Duplicate for seamless loop -->
+<span>Kotak Securities — Head of Commodity Research</span> <span class="w-1.5 h-1.5 bg-secondary rounded-full"></span>
+<span>Anand Rathi — 5 Years, Commodity &amp; Currency Desk</span> <span class="w-1.5 h-1.5 bg-secondary rounded-full"></span>
+<span>Motilal Oswal — Institutional Research</span> <span class="w-1.5 h-1.5 bg-secondary rounded-full"></span>
+<span>AMFI-Registered Mutual Fund Distributor</span> <span class="w-1.5 h-1.5 bg-secondary rounded-full"></span>
+<span>SEBI Research Analyst — INH000025212</span> <span class="w-1.5 h-1.5 bg-secondary rounded-full"></span>
+<span>BSE FinX Faculty — Highest Rating Ever Recorded</span> <span class="w-1.5 h-1.5 bg-secondary rounded-full"></span>
+<span>ET Now · CNBC Awaaz · Zee Business</span> <span class="w-1.5 h-1.5 bg-secondary rounded-full"></span>
+<span>CMT · CFTe · EPATian</span>
+</div>
+</div>
+</section>
+<!-- Section 4: The Two Services -->
+<section class="bg-surface py-24 px-8">
+<div class="max-w-7xl mx-auto">
+<div class="mb-16 max-w-2xl">
+<h2 class="text-4xl font-bold headline-monolith mb-4 uppercase tracking-tighter text-primary">Specialized Solutions.</h2>
+<p class="body-editorial">Whether you need professional asset management or institutional-grade education, we provide a structured path forward.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Card 1: MFD -->
+<div class="bg-white p-12 border-l-8 border-secondary flex flex-col justify-between">
+<div>
+<div class="text-[10px] font-bold uppercase tracking-widest text-secondary mb-4">Mutual Fund Distribution</div>
+<h3 class="text-3xl font-bold mb-6 headline-monolith">"I want to start or fix my SIPs."</h3>
+<p class="body-editorial mb-8">You're earning well but your money is sitting idle or split across too many funds that overlap. Ravindra will review your current allocation, explain the P-F-G framework (Protection → Foundation → Growth), and structure a SIP plan built around your income, timeline, and actual risk tolerance — not a generic template.</p>
+<div class="space-y-3 mb-8">
+<div class="flex items-center gap-3 text-[11px] font-bold uppercase tracking-wider opacity-60">
+<span class="material-symbols-outlined text-secondary text-sm">check</span> Minimum SIP: ₹10,000/month
+                            </div>
+<div class="flex items-center gap-3 text-[11px] font-bold uppercase tracking-wider opacity-60">
+<span class="material-symbols-outlined text-secondary text-sm">check</span> No product selling. AMFI-registered
+                            </div>
+<div class="flex items-center gap-3 text-[11px] font-bold uppercase tracking-wider opacity-60">
+<span class="material-symbols-outlined text-secondary text-sm">check</span> Money goes directly to the AMC
+                            </div>
+</div>
+</div>
+<button class="bg-primary text-white py-4 px-8 text-[11px] font-bold uppercase tracking-widest w-fit hover:bg-primary/90 transition-all">Structure My Portfolio</button>
+</div>
+<!-- Card 2: Education -->
+<div class="bg-primary text-white p-12 flex flex-col justify-between">
+<div>
+<div class="text-[10px] font-bold uppercase tracking-widest text-secondary mb-4">Financial Education</div>
+<h3 class="text-3xl font-bold mb-6 headline-monolith">"I want to learn how markets actually work."</h3>
+<p class="body-editorial opacity-70 mb-8">You've been watching YouTube videos and reading tips online. You still don't know why your trades work or fail. Ravindra runs live structured sessions on price action and technical analysis — the same frameworks he used at institutional desks for 18 years.</p>
+<div class="space-y-3 mb-8">
+<div class="flex items-center gap-3 text-[11px] font-bold uppercase tracking-wider opacity-70">
+<span class="material-symbols-outlined text-secondary text-sm">check</span> 10 sessions · 3 hours each · Live on weekends
+                            </div>
+<div class="flex items-center gap-3 text-[11px] font-bold uppercase tracking-wider opacity-70">
+<span class="material-symbols-outlined text-secondary text-sm">check</span> ₹20,000 for the full program
+                            </div>
+<div class="flex items-center gap-3 text-[11px] font-bold uppercase tracking-wider opacity-70">
+<span class="material-symbols-outlined text-secondary text-sm">check</span> Goal: Make rationale-based decisions alone
+                            </div>
+</div>
+</div>
+<button class="bg-secondary text-white py-4 px-8 text-[11px] font-bold uppercase tracking-widest w-fit hover:brightness-110 transition-all">Apply For Program</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Objections -->
+<section class="bg-primary py-24 px-8 text-white">
+<div class="max-w-7xl mx-auto">
+<div class="mb-16">
+<h2 class="text-4xl font-bold headline-monolith mb-4">The Truth About Advisory.</h2>
+<p class="opacity-50 max-w-xl body-editorial">Separating institutional reality from retail noise.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-white/5 p-12 border border-white/5">
+<div class="text-5xl font-bold text-secondary mb-6">01</div>
+<h3 class="text-xl font-bold mb-4 headline-monolith">"I already have a financial advisor through my bank."</h3>
+<p class="body-editorial opacity-60">Bank relationship managers recommend products their bank distributes. They are measured on AUM targets. Ravindra is AMFI-registered and SEBI-regulated — he gives unbiased research-based guidance. If your bank's funds are the right ones for you, he'll tell you to stay. Your money never passes through Arthavrksh. He earns a distributor commission from the AMC. You pay nothing extra.</p>
+</div>
+<div class="bg-white/5 p-12 border border-white/5">
+<div class="text-5xl font-bold text-secondary mb-6">02</div>
+<h3 class="text-xl font-bold mb-4 headline-monolith">"I can learn investing from YouTube and free courses."</h3>
+<p class="body-editorial opacity-60">Free content is made for reach, not for your portfolio. Nobody on YouTube is accountable for what happens after you press buy. Ravindra scored the only perfect faculty rating at BSE FinX because he teaches with live charts and real institutional scenarios — not slide decks. The difference between knowing a concept and applying it under real market pressure is 18 years of scar tissue. That is what he teaches.</p>
+</div>
+<div class="bg-white/5 p-12 border border-white/5">
+<div class="text-5xl font-bold text-secondary mb-6">03</div>
+<h3 class="text-xl font-bold mb-4 headline-monolith">"I don't have enough to invest or I'm just starting out."</h3>
+<p class="body-editorial opacity-60">The minimum SIP Ravindra recommends is ₹10,000/month. He's seen investors start at that amount and cross ₹50L portfolios through discipline alone. More importantly: the time to build a framework is before you have a lot to invest — not after. A wrong allocation compounds the wrong way just as efficiently as a right one.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 6: Social Proof -->
+<section class="bg-surface py-24 px-8">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-24">
+<div class="bg-white p-8 border-l-4 border-secondary shadow-sm">
+<p class="body-editorial mb-6 italic">"Ravindra's institutional background is visible in the way he approaches risk. This isn't your typical advisory."</p>
+<div class="font-bold uppercase text-[10px] tracking-widest text-primary">Priya S. • Senior Analyst</div>
+</div>
+<div class="bg-white p-8 border-l-4 border-secondary shadow-sm">
+<p class="body-editorial mb-6 italic">"Finally found a professional who doesn't just give tips but explains the underlying market structure."</p>
+<div class="font-bold uppercase text-[10px] tracking-widest text-primary">Karthik M. • Senior VP</div>
+</div>
+<div class="bg-white p-8 border-l-4 border-secondary shadow-sm">
+<p class="body-editorial mb-6 italic">"The clarity I gained in three months exceeded years of self-study. Truly institutional grade."</p>
+<div class="font-bold uppercase text-[10px] tracking-widest text-primary">Vikram R. • Entrepreneur</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2">
+<div class="bg-primary text-white p-16 flex flex-col justify-center">
+<div class="text-[10px] font-bold uppercase tracking-widest text-secondary mb-4">Official Accreditation</div>
+<h3 class="text-3xl font-bold headline-monolith mb-6">BSE FinX Review</h3>
+<div class="text-7xl font-bold text-white mb-2">1.0<span class="text-2xl text-secondary">/1.0</span></div>
+<p class="body-editorial opacity-50">Perfect rating by India's leading financial education marketplace.</p>
+</div>
+<div class="bg-surface-container-low p-16 flex flex-col justify-center border-y border-primary/5">
+<div class="flex flex-wrap gap-8 opacity-40 mb-12">
+<span class="text-[11px] font-bold tracking-widest uppercase">CMT Charter</span>
+<span class="text-[11px] font-bold tracking-widest uppercase">CFTe Level II</span>
+<span class="text-[11px] font-bold tracking-widest uppercase">SEBI RA</span>
+<span class="text-[11px] font-bold tracking-widest uppercase">AMFI ARN-293707</span>
+</div>
+<div class="flex flex-wrap items-center gap-10 opacity-30 grayscale">
+<img alt="ET Now Logo" class="h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSUlWaogVHtpj2HUSOSyx_g5488mz5GQISUd9GXiEZXiznPSDJIiD3SLLmlbwM9XimSX6weg43LzDgUlfbvAbRjEYfrz_izpgmbRQE2qS30YJ0clY4mO5b1_EFNuzwuT9SdwoCVdLxDl5w4wX_iuMs1GFUKnJTDSC4Y3aNxo4kAdUwHX544ONw9dUaQXU9WgTlb8g9uN0BszORY4osle4CL5DMb6sq3FZWvbvZqG3V4GfjXVo12yKV7-defqsvo0MCiPX7CIS5tkA" onerror="this.onerror=null;this.style.display='none'"/>
+<img alt="CNBC Logo" class="h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPxFgViCzSrLCots47Ui-VNVK4N697QMOK1yuA8RRrsCYbfcdFLGfuBrFoK13MUKm0F4cbzvvNGZeo9AZFzh7HN3JebJIZc01XDJlqQ0qDZSa4uq0K2DBv_Gkk0HiVImfFQzRBx72d_8gAkvnxPIbdk7mzt9YivVDse8n7dhHileu7oo5dM7fIpaDexinoNEYxRI0HsJWpMkjSG2ma9pjuGzJEjtECkVP3d68Gu_9edhsLjSCFzosR5v5DgTGDVpLGCXaKqE8_RGw" onerror="this.onerror=null;this.style.display='none'"/>
+<img alt="Zee Business Logo" class="h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACYZMCk22da0f_EJJFSAmdgoWUyVvQTejw4Q_kqAKu0O9UqC4ZixoqgRIEQaoXo-mY1tovSV3N1wq8K8_GyPGK8_GedaWCXbvHMXVrqHJg-fa3NO9I_gLNKebEJCRykGp85_HcslFOaoLQclAJ6Zuclz66bTl65oHUz7WtK0MTszi7AZj-H86Hpm3LgtEPGsJd3v7CwqWsWbeEeHHWLM_mq2zkPaf9ZLB4vkox3hi5YaL0TPartXTjXqfDTouo0-QhtnBVReoSg8E" onerror="this.onerror=null;this.style.display='none'"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 7: Form -->
+<section class="bg-primary py-32 px-8 text-white relative overflow-hidden">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-20 items-center">
+<div class="md:w-1/2">
+<h2 class="text-5xl font-bold headline-monolith mb-8">Book a Free 30-Minute Discovery Call.</h2>
+<ul class="space-y-6">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary">check_circle</span>
+<div>
+<span class="font-bold block mb-1">Mutual Fund Distribution Review</span>
+<span class="body-editorial text-sm opacity-60">A clinical look at your current holdings and SIP framework.</span>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary">check_circle</span>
+<div>
+<span class="font-bold block mb-1">Financial Education Pathways</span>
+<span class="body-editorial text-sm opacity-60">Understand if our institutional-grade program matches your goals.</span>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary">check_circle</span>
+<div>
+<span class="font-bold block mb-1">Zero Obligation</span>
+<span class="body-editorial text-sm opacity-60">Our goal is discovery and alignment, not a sales pitch.</span>
+</div>
+</li>
+</ul>
+</div>
+<div class="md:w-1/2 w-full">
+<div class="bg-white p-12 shadow-2xl">
+<h3 class="text-primary text-2xl font-bold mb-8 headline-monolith">Reserve Your Time Slot</h3>
+<form class="space-y-6">
+<div>
+<label class="block text-[10px] font-bold uppercase tracking-widest text-primary/40 mb-2">Full Name</label>
+<input class="w-full bg-surface-container-low border-0 border-b-2 border-primary/10 focus:border-primary focus:ring-0 text-primary py-3 px-0" type="text"/>
+</div>
+<div>
+<label class="block text-[10px] font-bold uppercase tracking-widest text-primary/40 mb-2">WhatsApp Number</label>
+<input class="w-full bg-surface-container-low border-0 border-b-2 border-primary/10 focus:border-primary focus:ring-0 text-primary py-3 px-0" type="tel"/>
+</div>
+<div class="space-y-3">
+<label class="block text-[10px] font-bold uppercase tracking-widest text-primary/40 mb-2">I'm interested in:</label>
+<div class="flex flex-col gap-3">
+<label class="flex items-center gap-2 text-primary text-xs font-medium cursor-pointer">
+<input class="text-secondary focus:ring-secondary border-primary/10" name="interest" type="radio" value="mfd"/> Mutual Fund Distribution
+                                </label>
+<label class="flex items-center gap-2 text-primary text-xs font-medium cursor-pointer">
+<input class="text-secondary focus:ring-secondary border-primary/10" name="interest" type="radio" value="edu"/> Financial Education
+                                </label>
+<label class="flex items-center gap-2 text-primary text-xs font-medium cursor-pointer">
+<input class="text-secondary focus:ring-secondary border-primary/10" name="interest" type="radio" value="both"/> Both
+                                </label>
+</div>
+</div>
+<button class="w-full bg-secondary text-white py-5 font-bold uppercase tracking-widest text-sm flex items-center justify-center gap-2 group" type="submit">
+                            Book My Free Call
+                            <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</form>
+<p class="text-[10px] text-center text-primary/40 mt-6 font-medium">Your data is encrypted and strictly confidential.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#F8F9FA] dark:bg-slate-950 border-t border-[#1A1A2E]/10 flex flex-col gap-8 px-8 py-12 max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-start gap-12">
+<div>
+<div class="text-lg font-bold text-[#1A1A2E] mb-4">Arthavrksh</div>
+<p class="text-sm leading-relaxed text-[#1A1A2E]/60 max-w-xs">Mutual fund distribution and financial education for investors who want a process — not a promise.</p>
+<div class="mt-6 p-4 bg-primary/5 text-[10px] text-primary/60 leading-relaxed uppercase tracking-wider font-bold">
+                    AMFI-Registered Mutual Fund Distributor<br/>
+                    ARN: 293707 | SEBI RA: INH000025212<br/>
+                    Registration Valid Till: 15-Sep-2029
+                </div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="flex flex-col gap-4">
+<span class="text-[11px] font-bold uppercase tracking-widest text-primary">Legal</span>
+<a class="text-[11px] font-bold uppercase tracking-widest text-[#1A1A2E]/35 dark:text-slate-500 hover:text-[#2ECC71] transition-colors" href="#">Disclaimer</a>
+<a class="text-[11px] font-bold uppercase tracking-widest text-[#1A1A2E]/35 dark:text-slate-500 hover:text-[#2ECC71] transition-colors" href="#">Privacy Policy</a>
+<a class="text-[11px] font-bold uppercase tracking-widest text-[#1A1A2E]/35 dark:text-slate-500 hover:text-[#2ECC71] transition-colors" href="#">Terms &amp; Conditions</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="text-[11px] font-bold uppercase tracking-widest text-primary">Policy</span>
+<a class="text-[11px] font-bold uppercase tracking-widest text-[#1A1A2E]/35 dark:text-slate-500 hover:text-[#2ECC71] transition-colors" href="#">Refund Policy</a>
+<a class="text-[11px] font-bold uppercase tracking-widest text-[#1A1A2E]/35 dark:text-slate-500 hover:text-[#2ECC71] transition-colors" href="#">Disclosure</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="text-[11px] font-bold uppercase tracking-widest text-primary">Grievance</span>
+<a class="text-[11px] font-bold uppercase tracking-widest text-[#1A1A2E]/35 dark:text-slate-500 hover:text-[#2ECC71] transition-colors" href="#">Redressal</a>
+<a class="text-[11px] font-bold uppercase tracking-widest text-[#1A1A2E]/35 dark:text-slate-500 hover:text-[#2ECC71] transition-colors" href="#">Investor Charter</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="text-[11px] font-bold uppercase tracking-widest text-primary">Data</span>
+<a class="text-[11px] font-bold uppercase tracking-widest text-[#1A1A2E]/35 dark:text-slate-500 hover:text-[#2ECC71] transition-colors" href="#">Complaint Data</a>
+</div>
+</div>
+</div>
+<div class="pt-12 border-t border-primary/5 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-[11px] font-bold uppercase tracking-widest text-primary/30">© 2024 Arthavrksh. All rights reserved.</p>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-primary/30 hover:text-secondary cursor-pointer transition-colors">public</span>
+<span class="material-symbols-outlined text-primary/30 hover:text-secondary cursor-pointer transition-colors">mail</span>
+<span class="material-symbols-outlined text-primary/30 hover:text-secondary cursor-pointer transition-colors">share</span>
+</div>
+</div>
+</footer>
+</body></html>
